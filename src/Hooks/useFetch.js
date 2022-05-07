@@ -25,7 +25,7 @@ export const useFetch =  () => {
             setLoading(false)
             customFetch()
         }, 1000 )
-    })
+    },[character])
 
     
 
@@ -33,6 +33,6 @@ export const useFetch =  () => {
     loading,
     api,
     setCharacter,
-    character,
+    character
   }
 }
